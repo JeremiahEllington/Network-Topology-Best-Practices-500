@@ -1,0 +1,16 @@
+policies:
+  - name: user-to-server-web
+    src: [HQ-USER]
+    dst: [HQ-SRV]
+    apps: [https]
+    action: allow
+  - name: iot-min-egress
+    src: [HQ-IOT]
+    dst: [Internet]
+    apps: [dns, ntp]
+    action: allow
+  - name: default-deny
+    src: [Any]
+    dst: [Any]
+    apps: [any]
+    action: deny

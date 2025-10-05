@@ -1,0 +1,7 @@
+category,qty,model/spec,notes
+Core Switch,2,48x10G + 4x40/100G,Stack/VS
+Distribution Switch,2 per floor,24/48 access + 2x10G uplinks,Stackable
+Access Switch,per port count,24/48 PoE+,Phones/APs/IoT
+NGFW,2,Throughput > 2Gbps,HA pair
+APs,per survey,Wi-Fi 6/6E,Controller-based
+WAN,2,Internet DIA/BB,Redundant paths

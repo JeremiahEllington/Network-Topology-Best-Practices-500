@@ -1,0 +1,26 @@
+graph LR
+  Internet1((ISP1)) --- FW1
+  Internet2((ISP2)) --- FW2
+  subgraph Edge
+    FW1[NGFW-1] --- FW2[NGFW-2]
+  end
+  subgraph Core
+    C1[CORE1] --- C2[CORE2]
+  end
+  FW1 --- C1
+  FW2 --- C2
+  subgraph Access
+    A1[ACC-F1-STACK] --- A2[ACC-F2-STACK]
+  end
+  C1 --- A1
+  C2 --- A2
+  subgraph DC
+    V1[Virtualization Cluster]
+    S1[Storage]
+  end
+  C1 --- V1
+  C2 --- S1
+  subgraph WLAN
+    WLC[WLAN Controller]---APs[Access Points]
+  end
+  C1 --- WLC

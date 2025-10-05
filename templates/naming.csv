@@ -1,0 +1,9 @@
+type,pattern,example
+Core,HQ-CORE{n},HQ-CORE1
+Distribution,HQ-DIST-F{floor}-{A|B},HQ-DIST-F2-A
+Access,HQ-ACC-F{floor}-{stack}-{member},HQ-ACC-F2-1-2
+Firewall,HQ-FW{n},HQ-FW1
+Router,HQ-EDGE{n},HQ-EDGE2
+AP,HQ-AP-F{floor}-{room},HQ-AP-F2-210
+Server,SRV-{role}-{seq},SRV-AD-01
+VM,VM-{service}-{env}-{seq},VM-APP-P-02

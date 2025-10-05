@@ -1,0 +1,3 @@
+switch,port,role,vlan,poe,location,notes
+HQ-ACC-F1-1,Gi1/0/1,Access,10,Yes,F1-ConfRm,Phone+PC
+HQ-ACC-F1-1,Gi1/0/2,Access,10,No,F1-210,PC

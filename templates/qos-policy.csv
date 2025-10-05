@@ -1,0 +1,5 @@
+class,dscp,priority,bandwidth,notes
+Voice,EF(46),priority,NA,RTP
+Voice-Signaling,CS3/AF31,guarantee,5%,SIP
+Critical,AF41,guarantee,10%,Business apps
+Best-Effort,0,default,remaining,Default

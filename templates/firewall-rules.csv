@@ -1,0 +1,5 @@
+src_vlan,dst_vlan,app/port,action,notes
+HQ-USER,HQ-SRV,HTTPS (443),allow,Access to web apps
+HQ-USER,Internet,80/443 allowlist,allow,Proxy/filter enforced
+HQ-IOT,Any,DNS/NTP only,allow,IoT minimal egress
+Any,Any,Any,deny,Default deny
